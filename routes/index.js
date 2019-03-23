@@ -24,4 +24,8 @@ router
     .route('/timeout')
     .get(otpCtrl.timeout);
 
+router
+    .route('/multiple')
+    .get(otpCtrl.multiple);
+
 module.exports = router;
