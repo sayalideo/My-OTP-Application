@@ -1,6 +1,22 @@
-
-<p>Verify your otp</p>
-<form action="/verify" method="POST">
-    <input type="text" placeholder="Enter OTP Number" name="otp">
-    <input type="submit" value="submit"/>
-</form>
+<% include ./partials/header.ejs  %>
+<div class="container">
+    <br><br>
+        <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Form register -->
+                        <form action="/verify" method="post">
+                            <h3 class="text-center pink-text font-bold py-4"><strong>Let's Verify Our OTP.</strong></h3>
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="text" name="otp" id="orangeForm-name37" class="form-control" placeholder="OTP Number" required=""/>
+                            </div>
+                            <div class="text-center py-4">
+                                <button class="btn btn-outline-pink">Verify<i class="fa fa-magic ml-1"></i></button>
+                            </div>
+                        </form>
+                        <!-- Form register -->
+                    </div>
+                </div>
+            </div>
+</div>

@@ -6,7 +6,7 @@ var parser     = require("body-parser"),
 var port = process.env.PORT || 3000;
 const dir      = __dirname;
 app.set('view engine', 'ejs');
-app.use("/public" , express.static(dir + '/public'));
+app.use(express.static(dir + '/public'));
 app.use(parser.urlencoded({extended:true}));
 app.use(parser.json());
 app.use(router);
