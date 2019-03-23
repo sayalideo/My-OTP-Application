@@ -12,4 +12,12 @@ router
     .get(otpCtrl.getOtp)
     .post(otpCtrl.postMsg);
 
+router
+    .route('/success')
+    .get(otpCtrl.success);
+
+router
+    .route('/failure')
+    .get(otpCtrl.failure);
+
 module.exports = router;

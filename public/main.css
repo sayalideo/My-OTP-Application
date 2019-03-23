@@ -1,5 +1,9 @@
 body{
-    background: #f5f5f0;
+    background: #999797;
+}
+
+.text-color{
+    color: #d41a2a;
 }
 
 .hm-gradient {

@@ -37,9 +37,16 @@ module.exports.getOtp = (req,res)=>{
 module.exports.postMsg = (req,res)=>{
     userOtp = req.body.otp;
     if(userOtp == otp){
-        res.send("Successful!  :-D");
+        res.redirect("/success");
     }else{
-        res.send("Unuccessful! :'-C");
+        res.redirect("/failure");
     }
+}
 
+module.exports.success = (req,res)=>{
+    res.render("success");
+}
+
+module.exports.failure = (req,res)=>{
+    res.render("failure");
 }
