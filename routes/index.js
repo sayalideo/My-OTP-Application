@@ -20,4 +20,8 @@ router
     .route('/failure')
     .get(otpCtrl.failure);
 
+router
+    .route('/timeout')
+    .get(otpCtrl.timeout);
+
 module.exports = router;
