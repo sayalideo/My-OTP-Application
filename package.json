@@ -1,0 +1,33 @@
+{
+  "name": "my-otp-application",
+  "version": "1.0.0",
+  "description": "This is an OTP Application using NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayalideo/My-OTP-Application.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "OTP"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayalideo/My-OTP-Application/issues"
+  },
+  "homepage": "https://github.com/sayalideo/My-OTP-Application#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "msg91": "0.0.6",
+    "random-number": "0.0.9",
+    "sendotp": "^1.2.9"
+  }
+}
